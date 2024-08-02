@@ -4,16 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">My Portfolio.</a>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
-    </nav>
+    <div class="container">
+        <content>
+            <h1>My Portfolio.</h1>
+            <br />
+            <h2>Hey, I'm Noppon Sripetchpool</h2>
+            <h3>Mobile Developer (Flutter)</h3>
+
+        <div id="tab_filters" class="tab_filters">
+        <a href="#" data-filter="All" class="active">All</a>
+        <a href="#" data-filter="iOS">iOS</a>
+        <a href="#" data-filter="Android">Android</a>
+        </div>
+        <div class="image-list-box">
+            <img src="images/image1.jpg" alt="Image 1" data-category="iOS Android">
+            <img src="images/image2.jpg" alt="Image 2" data-category="iOS Android">
+            <img src="images/image3.jpg" alt="Image 3" data-category="Android">
+            <img src="images/image4.jpg" alt="Image 4" data-category="All">
+            <img src="images/image5.jpg" alt="Image 5" data-category="All">
+            <img src="images/image6.jpg" alt="Image 6" data-category="All">
+        </div>
+        <h4 class="center-text"> Gunkul Engineering Public Company Limited</h4>
+        </content>
+
+    </div>
+    
+<script src="js/scripts.js"></script>
 </body>
+
 </html>

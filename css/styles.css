@@ -1,0 +1,118 @@
+body {
+    font-family: 'Lora', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5;
+    background: linear-gradient(270deg, #aad0ff, #d4e0f2, #d7e9ff, #f0f9ff);
+        background-size: 800% 800%;
+        animation: gradientBackground 15s ease infinite;
+    
+}
+
+content {
+    color: black;
+    padding: 20px;
+    text-align: left;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+h2 {
+    margin: 0;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+h3 {
+    margin: 0;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.tab_filters {
+    text-decoration: none;
+    display: flex;
+    padding: 10px;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+#tab_filters a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+#tab_filters a.active {
+    color: #fff;
+    background-color: #335f8e;
+}
+
+#tab_filters a:hover {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.image-list-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: left;
+}
+
+.image-list-box img {
+    width: 30%;
+    height: 250;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.image-list-box img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.center-text {
+    text-align: center;
+}
