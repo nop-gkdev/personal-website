@@ -1,41 +1,46 @@
 body {
-    font-family: 'Lora', sans-serif;
+    font-family: 'Lora', serif;
+    background-color: #f8f9fa;
+    color: #333;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f5f5f5;
-    background: linear-gradient(270deg, #a3bad6, #d4e0f2, #8cbefb, #f0f9ff);
-        background-size: 800% 800%;
-        animation: gradientBackground 15s ease infinite;
-    
 }
 
-content {
-    color: black;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 h1 {
-    margin: 0;
+    font-size: 3em;
+    margin: 20px 0;
     padding: 20px;
-    animation: fadeIn 1s ease-in-out forwards;
+    color: #343a40;
 }
+
 h2 {
-    margin: 0;
-    padding: 20px;
-    animation: fadeIn 1s ease-in-out forwards;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #495057;
 }
+
 h3 {
-    margin: 0;
-    padding: 20px;
-    animation: fadeIn 1s ease-in-out forwards;
+    font-size: 1.5em;
+    margin: 5px 0 20px;
+    color: #6c757d;
+}
+h4 {
+    /* font-size: 1.5em; */
+    margin: 5px 0 20px;
+    color: #6c757d;
 }
 
 .tab_filters {
     text-decoration: none;
     display: flex;
-    padding: 10px;
+    padding: 20px;
     animation: fadeIn 1s ease-in-out forwards;
 }
 
@@ -138,7 +143,7 @@ h3 {
     max-width: 700px;
     text-align: center;
     color: #ccc;
-    padding: 20px;
+    padding: 60px;
     background-color: #e9f7fa;
     border-radius: 10px;
 }
@@ -146,7 +151,7 @@ h3 {
 #modalText {
     font-family: 'Lora', sans-serif;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-size: 16px;
 }
 
@@ -175,6 +180,11 @@ h3 {
     font-size: 20px;
     transition: 0.3s;
     user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+    color: white;
 }
 
 .prev {
@@ -206,9 +216,13 @@ h3 {
     text-decoration: none;
     cursor: pointer;
 }
-.footer {
-    width: 100%;
+footer {
+    margin-top: 50px;
+    padding: 5px 0;
+    background-color: #b3c5d7;
+    color: #f8f9fa;
     text-align: center;
+    
 }
 .non-clickable {
     pointer-events: none;
