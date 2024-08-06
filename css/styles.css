@@ -32,9 +32,14 @@ h3 {
     color: #6c757d;
 }
 h4 {
-    /* font-size: 1.5em; */
     margin: 5px 0 20px;
     color: #6c757d;
+}
+
+.aboutMe {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
 }
 
 .tab_filters {
